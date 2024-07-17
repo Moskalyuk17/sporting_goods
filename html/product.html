@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подробная информация о товаре</title>
+    <!-- Здесь могут быть подключения ваших стилей или библиотек стилей -->
+    <style>
+        /* Пример стилей для оформления страницы */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .product-details {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .product-image {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-details">
+        <h1 id="productName">Наименование товара</h1>
+        <img id="productImage" class="product-image" src="" alt="Изображение товара">
+        <p id="productPrice">Цена: $0</p>
+        <p id="productCategory">Категория: Нет данных</p>
+    </div>
+
+    <script>
+        // Получаем идентификатор товара из параметров запроса
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+
+        // Получаем данные о товаре с сервера
+        fetch(`http://localhost:3000/products/${productId}`)
+            .then(response => response.json())
+            .then(product => {
+                // Обновляем содержимое страницы с информацией о товаре
+                document.getElementById('productName').textContent = product.name;
+                document.getElementById('productImage').src = product.image;
+                document.getElementById('productPrice').textContent = `Цена: $${product.price}`;
+                document.getElementById('productCategory').textContent = `Категория: ${product.category}`;
+            })
+            .catch(error => {
+                console.error('Ошибка при загрузке данных о товаре:', error);
+            });
+    </script>
+</body>
+</html>

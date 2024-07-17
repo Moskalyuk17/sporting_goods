@@ -1,0 +1,241 @@
+@media (max-width: 789px) {
+
+    .container{
+        max-width: 789px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+
+    .info h5{
+        padding-bottom: 30px;
+        font-size: 18px;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings:
+          "slnt" 0;
+    }
+    
+    .info a{
+        padding-top: 10px;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .info span{
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+          "slnt" 0;
+        font-size: 12px;
+    }
+
+    .grid_catal,
+    .grid_tovar {
+        grid-column-gap: 4ch;
+        grid-row-gap: 20px;
+    }
+
+    .grid_now span{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .grid_now span:nth-child(2){
+        float: left;
+    }
+
+    .grid_now span:nth-child(3){
+        float: left;
+    }
+    
+    .grid_now span:nth-child(4){
+        float: left;
+    }
+    
+}
+
+
+
+@media (max-width: 425px) {
+
+    .container{
+        max-width: 425px;
+    }
+
+    .shapka{
+        min-height: 200px;
+    }
+    
+    .text h2{
+        font-size: 40px;
+    }
+    
+    .text h3{
+        font-size: 25px;
+    }
+
+    .brand img{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .brand img:nth-child(3){
+        width: 30px;
+        height: 20px;
+    }
+
+    .brand img:nth-child(4){
+        width: 30px;
+        height: 30px;
+    }
+    
+    .brand img:nth-child(5){
+        width: 40px;
+        height: 30px;
+    }
+    
+    .brand img:nth-child(6){
+        width: 30px;
+        height: 30px;
+    }
+    
+    .brand img:nth-child(7){
+        width: 30px;
+        height: 20px;
+    }
+    
+    .brand img:nth-child(8){
+        width: 30px;
+        height: 20px;
+    }
+
+    .banner_skidki{
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .banner_skidki img{
+        width: 100px;
+        height: 60px;
+        margin: 10px;
+    }
+
+    .info{
+        padding-top: 20px;
+    }
+
+    .info h5{
+        padding-bottom: 20px;
+        padding-right: 5px;
+        font-size: 10px;
+    }
+    
+    .info a{
+        padding-top: 5px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .info h5:nth-child(1){
+        padding-right: 10px;
+    }
+
+    .info .time_work span:nth-child(3){
+        white-space: pre-wrap;
+    }
+    
+    .info span{
+
+        font-size: 8px;
+    }
+
+    .icon img{
+        width: 80%;
+    }
+
+    
+    .grid_now,
+    .grid_catal,
+    .grid_tovar {
+        grid-column-gap: 15px;
+        grid-row-gap: 10px;
+        width: 100%;
+        font-size: 90%;
+    }
+
+    .grid_now span{
+        font-size: 10px;
+        width: 91%;
+    }
+
+    .grid_now span:nth-child(2){
+        float: left;
+    }
+
+    .grid_now span:nth-child(3){
+        float: left;
+    }
+    
+    .grid_now span:nth-child(4){
+        float: left;
+    }
+
+    .butt a{
+        padding: 0.5rem 2.2rem;
+        font-size: 12px;
+    }
+
+    .search h3{
+        font-size: 18px;
+    }
+
+    .search input{
+        font-size: 10px;
+        height: 16px;
+    }
+
+    .search button{
+        margin-top: 5px;
+          font-size: 10px;
+    }
+
+    .paginator {
+        display: flex;
+        justify-content: space-between;
+        width: 280px;
+        padding: 10px;
+        margin: 30px auto;
+        white-space: nowrap;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings:
+          "slnt" 0;
+    }
+    
+    .paginator button,
+    .paginator span {
+        border: none;
+        display: inline-block;
+        min-width: 35px;
+        height: 35px;
+        padding: 0 10px;
+        line-height: 35px;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: middle;
+        background: #D9D9D9;
+    }
+    
+}
